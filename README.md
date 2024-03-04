@@ -2,5 +2,5 @@
 
 ## Preview
 
-![Preview this web]()
+![Preview this web](img/imagen-mujer.jpg)
 
