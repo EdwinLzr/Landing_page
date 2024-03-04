@@ -8,13 +8,61 @@
     --negro:#1f1e1e;
     --grisClaro:#e1e1e1;
 
-
+   --separacion:5rem;
 
     --fuentePrincipal:'Roboto', sans-serif;
     --fuenteSecundaria:'Lato', sans-serif;
 }
 
 
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
     font-family:var(--fuentePrincipal) ;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
+
+/* globales */
+.contenedor{
+    max-width: 120rem;
+    width:90%;
+    margin-inline: auto;
+}
+h1, h2, h3{
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc(var(--separacion) / 2) 0;
+
+}
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* utilidades */
+.text-center{
+    text-align: center;
+}
+
+
+
+
