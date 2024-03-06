@@ -249,8 +249,16 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform, background-size;
+    transition-duration: .3s;
+    cursor: pointer;
 
 
+}
+
+.modelo:hover{
+    transform: scale(1.1);
+    background-size: 20rem;
 }
  @media(min-width:992px){
     .modelo{
@@ -308,6 +316,7 @@ background-image: url(../img/modelo-y.svg);
     font-weight: 900;
     line-height: 0;
 }
+
 
 
 
