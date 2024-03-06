@@ -140,7 +140,7 @@ img{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        padding: var(--separacion);
+        padding: calc(var(--separacion) / 2);
     }
     .icono{
         margin-bottom: 0;
@@ -156,8 +156,55 @@ img{
  .icono h3{
     text-transform: uppercase;
     color: var(--primaryColor);
-
  }
+
+/* sobre techPro */
+
+.sobre-tech{
+  background-image: linear-gradient(to bottom, transparent 50%, var(--primaryColor) 0% ), url(../img/imagen-mujer.jpg); 
+ background-position: right;
+ background-repeat: repeat,  no-repeat;
+ background-size: 100%, 110rem ;
+}
+ @media(min-width:768px){
+    .sobre-tech{
+        background-image: linear-gradient(to left, transparent 50%, var(--primaryColor) 0% ), url(../img/imagen-mujer.jpg); 
+      
+
+      }
+ }
+.sobre-tech-grid{
+  display: grid;
+  grid-template-rows: repeat(2, 40rem );  
+  row-gap: var(--separacion);
+}
+
+ @media(min-width:768px){
+    .sobre-tech-grid{
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2, 1fr );  
+        column-gap: var(--separacion);
+
+    }
+ }
+.texto-sobre-tech{
+    grid-row: 2/3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.texto-sobre-tech h2{
+ font-size: 4rem;
+}
+.texto-sobre-tech p{
+   font-size: 2rem;
+   line-height: 2; 
+}
+
 
 
 
